@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* Les variables
+Déclaration de variables
+*/
+body {
+  background: black;
+}
+
+/* Nesting: imbrication */
+.contNav {
+  background: green;
+  padding: 5px;
+  width: 50%;
+  margin: 0 auto;
+}
+.contNav .nav {
+  background: yellow;
+  padding: 10px;
+}
+.contNav .nav li {
+  color: red;
+  list-style-type: none;
+  font-size: 1.4em;
+  /* Selection du premier élément */
+}
+.contNav .nav li:first-child {
+  background-color: black;
+  font-size: 2em;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

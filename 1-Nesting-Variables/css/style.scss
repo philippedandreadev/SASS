@@ -1,0 +1,33 @@
+/* Les variables
+Déclaration de variables
+*/
+$color-body: black; 
+$couleur-base-text: red;
+$taille-moyen: 1.4em;
+$light: white;
+
+body {
+    background: $color-body;
+}
+/* Nesting: imbrication */
+.contNav {
+    background: green;
+    padding: 5px;
+    width: 50%;
+    margin: 0 auto;
+    .nav {
+        background: yellow;
+        padding: 10px;
+        li {
+            color: $couleur-base-text;
+            list-style-type: none;
+            font-size: $taille-moyen;
+            /* Selection du premier élément */
+            &:first-child {
+                background-color: $color-body;
+                font-size: 2em;
+                color: $light;
+            }
+        }
+    }
+}
