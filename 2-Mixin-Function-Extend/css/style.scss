@@ -4,14 +4,14 @@ $darkColor: #343a40;
 body {
     background-color: $lightColor;
     margin: 0;
-    .contNav {
-        background-color: $darkColor;
-        padding: 1em;
-        ul>li {
-            color: $lightColor;
-            padding: 0.5em;
-            list-style-type: none;
-            margin: 0;
-        }
+}
+.contNav {
+    background-color: $darkColor;
+    padding: 1em;
+    ul>li {
+        color: $lightColor;
+        padding: 0.5em;
+        list-style-type: none;
+        margin: 0;
     }
 }
