@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Les mixins. Elles permettent de créer un bout de code 
 et de le réutiliser partout */
-* body {
+body {
   display: flex;
   justify-content: center;
   align-items: center;

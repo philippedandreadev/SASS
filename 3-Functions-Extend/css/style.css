@@ -1,0 +1,16 @@
+.box {
+  background-color: black;
+  width: 400px;
+  height: 400px;
+}
+
+.titre, .titreDeux {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.titreDeux {
+  color: red;
+  letter-spacing: 10px;
+}/*# sourceMappingURL=style.css.map */

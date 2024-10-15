@@ -1,0 +1,24 @@
+// Déclaration de la fonction
+@function add($a,$b) {
+    @return $a + $b;
+}
+
+.box {
+    background-color: black;
+    width: 400px;
+    // Utilisation de la fonction add
+    height: add(200px,200px);
+}
+
+.titre {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.titreDeux {
+    // Utilisation de extend pour copier le style css
+    @extend .titre;
+    color: red;
+    letter-spacing: 10px;
+}
