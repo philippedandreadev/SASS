@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+$soleil: yellow;
+
+@mixin fontStuff($couleur,$size) {
+    color: $couleur;
+    font-size: $size;
+}
+
+@mixin otherStuff($fond,$ton) {
+    #{$fond}: $ton;
+}
+@mixin elementCentre() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin centrage($x: 50%, $y: 50%) {
+    position: absolute;
+    left: $x;
+    top: $y;
+    transform: translate(-$x,-$y);
+}
+
+@mixin condition($fond) {
+    background-color: $fond;
+    @if $fond != blue {
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+}
+
+@mixin enfants($desc...) {
+    @for $i from 0 to length($desc) {
+        // le nth signifie tous les enfants de l'élément parent
+        #{nth($desc, $i + 1)} {
+            font-size: 30px + $i * 10;
+        }
+    }
+}
+
+.boxCentre {
+    @include fontStuff(white,1.5em);
+    @include otherStuff(background-color, black);
+    // Centrage du  carré dans la page
+    @include centrage();
+    // Centrage des éléments du carré
+    @include elementCentre();
+    width: 200px;
+    height: 200px;
+}
+
+.boxP {
+    height: 400px;
+    width: 400px;
+    @include fontStuff(red,1.5em);
+    @include otherStuff(background-color,yellow);
+}
+
+.boxCondition {
+    width: 200px;
+    height: 200px;
+    color: red;
+    @include condition(black);
+}
+
+.parent {
+    @include enfants('.enfant1','.enfant2','.enfant3');
+}

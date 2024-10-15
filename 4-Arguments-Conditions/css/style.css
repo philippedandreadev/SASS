@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.boxCentre {
+  color: white;
+  font-size: 1.5em;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+}
+
+.boxP {
+  height: 400px;
+  width: 400px;
+  color: red;
+  font-size: 1.5em;
+  background-color: yellow;
+}
+
+.boxCondition {
+  width: 200px;
+  height: 200px;
+  color: red;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.parent .enfant1 {
+  font-size: 30px;
+}
+.parent .enfant2 {
+  font-size: 40px;
+}
+.parent .enfant3 {
+  font-size: 50px;
+}/*# sourceMappingURL=style.css.map */
