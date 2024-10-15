@@ -12,7 +12,7 @@ et de le réutiliser partout */
     align-items: center;
 
 }
-*body {
+body {
     // Utilisation de la mixin avec include
     @include flexMid;
     background-color: $lightColor;
