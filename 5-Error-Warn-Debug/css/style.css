@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container .box1 {
+  font-size: 30px;
+  /* @if $i > 1 {
+       Warn permet de prévenir afin de faire attention (cela ne coupe pas le fichier 
+      @warn "Limite d'enfants dépassée"; 
+       Error permet également de prévenir mais stop le programme en plus !
+      @error "Limite d'enfants dépassée";
+  */
+}
+.container .box2 {
+  font-size: 35px;
+  /* @if $i > 1 {
+       Warn permet de prévenir afin de faire attention (cela ne coupe pas le fichier 
+      @warn "Limite d'enfants dépassée"; 
+       Error permet également de prévenir mais stop le programme en plus !
+      @error "Limite d'enfants dépassée";
+  */
+}
+.container .box3 {
+  font-size: 40px;
+  /* @if $i > 1 {
+       Warn permet de prévenir afin de faire attention (cela ne coupe pas le fichier 
+      @warn "Limite d'enfants dépassée"; 
+       Error permet également de prévenir mais stop le programme en plus !
+      @error "Limite d'enfants dépassée";
+  */
+}
+
+.box {
+  background-color: black;
+  color: white;
+  margin-bottom: 1em;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

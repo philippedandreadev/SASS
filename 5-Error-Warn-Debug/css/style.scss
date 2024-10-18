@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+$dark:black;
+$light: white;
+
+@mixin degrad($desc...) {
+    @for $i from 0 to length($desc) {
+      #{nth($desc,$i+1)} {
+        font-size: 30px + $i * 5;
+    
+        /* @if $i > 1 {
+             Warn permet de prévenir afin de faire attention (cela ne coupe pas le fichier 
+            @warn "Limite d'enfants dépassée"; 
+             Error permet également de prévenir mais stop le programme en plus !
+            @error "Limite d'enfants dépassée";
+        */
+
+            @debug "valeur de i: #{$i}";
+        }
+
+    }
+}
+
+
+.container {
+    @include degrad('.box1','.box2','.box3');
+}
+
+.box {
+    background-color: $dark;
+    color: $light;
+    @debug "couleur du background: #{$dark}";
+    @debug "Couleur du texte: #{$light}";
+    margin-bottom: 1em;
+    padding: 5px;
+}
