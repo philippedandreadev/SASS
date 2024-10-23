@@ -1,0 +1,30 @@
+$dark:black;
+$light:#ffffff;
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: $dark;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    @include flex;
+}
+
+.box {
+    @include flex;
+    justify-content: space-around;
+    width: 80%;
+    background-color:beige;
+    min-height: 80vh;
+    .box1, .box2, .box3 {
+        width: 200px;
+        height: 200px;
+        background-color: $dark;
+    }
+    border: 3px solid $light;
+}
