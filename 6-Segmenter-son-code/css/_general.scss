@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    header {
+        grid-column: 1 / -1;
+        background-color: $dark;
+        color: $light;
+        @include flex;
+    }
+    .sidebar1, .sidebar2{
+        grid-column: span 3;
+        background-color: $greenOriginal;
+        color: $light;
+        font-size: 1.2em;
+        @include flex;
+        text-align: center;
+    }
+    .content {
+        padding: 1em;
+        grid-column: span 6;
+    }
+    footer {
+        background-color: $orange;
+        grid-column: 1 / -1;
+        color: $light;
+        font-weight: bold;
+        @include flex;
+    }
+}
+@media all and (max-width: 576px) { 
+    .sidebar1, .content, .sidebar2 {
+       grid-column: 1 / -1 !important;
+    }
+ 
+ }
