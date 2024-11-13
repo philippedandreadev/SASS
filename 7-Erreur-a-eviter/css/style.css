@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*Utiliser les mixins avec des paramétres
+  Ne pas utiliser pour dupliquer du code car cela donne un code CSS peu maintenable */
+.container2, .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container2 .box2, .container .box {
+  border-radius: 50%;
+  border: 3px solid #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* les nesting sont à utiliser avec modération (au maximum 3 imbrications
+pour un code plus maintenable */
+.container {
+  min-height: 100vh;
+}
+.container .box {
+  width: 200px;
+  height: 200px;
+  background-color: orangered;
+}
+
+.container2 {
+  min-height: 100vh;
+}
+.container2 .box2 {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+}/*# sourceMappingURL=style.css.map */

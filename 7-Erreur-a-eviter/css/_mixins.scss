@@ -1,0 +1,6 @@
+/*Utiliser les mixins avec des paramétres
+  Ne pas utiliser pour dupliquer du code car cela donne un code CSS peu maintenable */
+@mixin initPage($marginOff:0,$paddingOff:0) {
+    margin: $marginOff;
+    padding: $paddingOff;
+}

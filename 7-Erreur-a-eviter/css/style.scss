@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'mixins';
+@import 'placeholder';
+
+body {
+    @include initPage;
+}
+/* les nesting sont à utiliser avec modération (au maximum 3 imbrications
+pour un code plus maintenable */
+.container {
+    min-height: 100vh;
+    @extend %CenteredPage;
+    .box {
+        width: 200px;
+        height: 200px;
+        background-color: $orange;
+        @extend %styleBox;
+    }
+}
+.container2 {
+    min-height: 100vh;
+    @extend %CenteredPage;
+    .box2{
+        width: 200px;
+        height: 200px;
+        background-color: $teal;
+        @extend %styleBox;
+    }
+}

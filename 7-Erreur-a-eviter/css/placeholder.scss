@@ -1,0 +1,11 @@
+// Utiliser les placeholders pour dupliquer du code afin de ne pas surcharger le CSS
+%CenteredPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%styleBox {
+    border-radius: 50%;
+    border: 3px solid $dark;
+}
